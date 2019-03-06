@@ -1,6 +1,7 @@
 ﻿using LegoMinifigures.Legos;
 using LegoMinifigures.Legos.Heads;
 using LegoMinifigures.Legos.Torsos;
+using LegoMinifigures.Legos.Legs;
 using System;
 
 namespace LegoMinifigures
@@ -10,13 +11,18 @@ namespace LegoMinifigures
         static void Main(string[] args)
         {
             var myDogHead = new Dog();
+
+            myDogHead.Talk();
+
             var martinHead = new Bald();
             var notAnAstro = new Astronaut();
 
-            var fitTorso = new FitTorso(2, Gender.Male, Colors.Freckles);
-            fitTorso.Crunch(22);
+            var fitTorso = new FitTorso(2);
+            fitTorso.Crunch(12);
 
-            var minifigure = new Minifigure(martinHead, fitTorso);
+            var adamsLegs = new OrangeLegs(Length.Short);
+
+            var minifigure = new Minifigure("Adam", martinHead, fitTorso, adamsLegs);
 
             minifigure.Greet();
 

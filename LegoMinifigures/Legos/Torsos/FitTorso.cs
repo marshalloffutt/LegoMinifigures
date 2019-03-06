@@ -7,7 +7,7 @@ namespace LegoMinifigures.Legos.Torsos
 {
     class FitTorso : Torso
     {
-        public FitTorso(int numberOfArms, Gender gender, Colors color = Colors.Red)
+        public FitTorso(int numberOfArms, Gender gender = Gender.Other, Colors color = Colors.Red)
             : base(numberOfArms, gender, color, "OMG, so fit.")
         {
         }

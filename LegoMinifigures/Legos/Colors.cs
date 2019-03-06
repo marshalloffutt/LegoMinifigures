@@ -10,6 +10,7 @@ namespace LegoMinifigures.Legos
             Red,
             Freckles,
             Blue,
-            Bone
+            Bone,
+            Orange
         }
 }
